@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.006);
+  backdrop-filter: blur(10px);
+}
+
+header .logo {
+  color: #810100;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 40px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+header nav a:hover,
+header nav a.active {
+  background: #810100;
+  color: #fff;
+}
+
+.hero-image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+    margin-top: 100px;
+}
+
+
+/* Layout kiri & kanan */
+.kiri, .kanan {
+  width: 50%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+
+.kiri {
+    width: 50%;
+    height: 100vh;
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Bagian kanan doang yg scrollable */
+.kanan {
+  padding: 150px 80px 50px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.section {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto 0;
+  padding: 50px 30px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 8px;
+  color: #810100;
+  font-weight: 600;
+}
+
+/* About */
+.about p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-card {
+  padding: 12px 25px;
+  background: #fff;
+  border: 1px solid #810100;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: #810100;
+  color: #fff;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border: none;
+  background: #810100;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #5c0000;
+}
